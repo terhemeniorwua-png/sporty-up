@@ -8,3 +8,31 @@
 @theme{
     --font-barlow:var(--font-barlow);
 }
+
+body{
+    /* background-color: #262626; */
+    color: white;
+    font-family: var(--font-barlow);
+
+}
+
+
+
+.landingBg{
+     background: url(../images/overlay.png), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../images/hero-bg.png);
+      /* background: linear-gradient(hsl(0, 0%, 15%, 0.95),hsla(0, 0%, 15%, 0.95)), url(../images/hero-bg.png); */
+     background-position: center;
+     background-repeat: no-repeat;
+     /* color: hsl(0, 0%, 50%); */
+     /* color: hsl(0, 0%, 15%); */
+    
+}
+.btn{
+    background-color: #9EFF00;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0.3em;
+    color: black;
+    font-size: 15px;
+}
