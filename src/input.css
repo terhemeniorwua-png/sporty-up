@@ -26,7 +26,10 @@ body{
     
 }
 .our-service-bg{
- background:  url(../images/overlay.png), url(../images/service-bg.png);
+ background:  url(../images/overlay.png),   linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),  url(../images/service-bg.png);
+ background-position: center;
+     background-repeat: space, no-repeat, no-repeat;
+     object-fit: contain;
 }
 
 .green-btn{
