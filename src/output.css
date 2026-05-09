@@ -13,6 +13,8 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
@@ -185,6 +187,9 @@
   .left-\[40\%\] {
     left: 40%;
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
   .m-auto {
     margin: auto;
   }
@@ -196,6 +201,9 @@
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .mr-5 {
+    margin-right: calc(var(--spacing) * 5);
   }
   .flex {
     display: flex;
@@ -273,6 +281,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-\[\#262626\] {
     border-color: #262626;
   }
@@ -296,6 +308,9 @@
   }
   .bg-\[\#262626\] {
     background-color: #262626;
+  }
+  .bg-\[\#262626b8\] {
+    background-color: #262626b8;
   }
   .object-contain {
     object-fit: contain;
@@ -336,11 +351,17 @@
   .py-\[8\%\] {
     padding-block: 8%;
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
   .pt-\[8\%\] {
     padding-top: 8%;
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -368,6 +389,16 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
@@ -443,6 +474,12 @@ body {
   background-repeat: space, no-repeat, no-repeat;
   object-fit: contain;
 }
+.fqu-bg {
+  background: url(../images/overlay.png), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../images/fqa-bg.png);
+  background-position: center;
+  background-repeat: space, no-repeat, no-repeat;
+  object-fit: contain;
+}
 .green-btn {
   background-color: #9EFF00;
   padding: 10px;
@@ -479,6 +516,9 @@ body {
   background-color: #262626;
   padding: 10px;
   border-radius: 0.3em;
+}
+.turn-green:focus {
+  color: #9EFF00;
 }
 @property --tw-border-style {
   syntax: "*";
