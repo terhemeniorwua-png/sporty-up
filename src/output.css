@@ -207,6 +207,12 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
+  }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
@@ -216,8 +222,9 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
+  .size-5 {
+    width: calc(var(--spacing) * 5);
+    height: calc(var(--spacing) * 5);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -249,20 +256,11 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .flex-row {
-    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -285,6 +283,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
@@ -301,15 +302,32 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-x {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 1px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-\[\#262626\] {
     border-color: #262626;
   }
+  .border-\[\#343333\] {
+    border-color: #343333;
+  }
   .border-\[\#66666644\] {
     border-color: #66666644;
+  }
+  .border-x-\[\#66666644\] {
+    border-inline-color: #66666644;
+  }
+  .border-b-\[\#343333\] {
+    border-bottom-color: #343333;
   }
   .bg-\[\#000\] {
     background-color: #000;
@@ -331,6 +349,9 @@
   }
   .bg-\[\#262626b8\] {
     background-color: #262626b8;
+  }
+  .bg-\[rgba\(38\,38\,38\,0\.72\)\] {
+    background-color: rgba(38,38,38,0.72);
   }
   .object-contain {
     object-fit: contain;
@@ -356,6 +377,9 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-\[20\%\] {
+    padding-inline: 20%;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -364,6 +388,9 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
@@ -422,14 +449,8 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[10px\] {
-    font-size: 10px;
-  }
   .text-\[11px\] {
     font-size: 11px;
-  }
-  .text-\[12px\] {
-    font-size: 12px;
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -471,18 +492,12 @@
   .text-\[\[13px\]\] {
     color: [13px];
   }
-  .text-\[sm\] {
-    color: sm;
-  }
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
+  .outline-0 {
     outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+    outline-width: 0px;
   }
   .hover\:bg-\[\#262626c6\] {
     &:hover {
@@ -573,6 +588,9 @@ body {
 }
 .turn-green:focus {
   color: #9EFF00;
+}
+.input {
+  background-color: #262626;
 }
 @property --tw-border-style {
   syntax: "*";
