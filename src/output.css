@@ -184,41 +184,14 @@
   }
 }
 @layer utilities {
-  .absolute {
-    position: absolute;
-  }
   .relative {
     position: relative;
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
-  .top-2 {
-    top: calc(var(--spacing) * 2);
   }
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-  .bottom-1 {
-    bottom: calc(var(--spacing) * 1);
-  }
-  .bottom-3 {
-    bottom: calc(var(--spacing) * 3);
-  }
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
-  }
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
-  }
-  .bottom-15 {
-    bottom: calc(var(--spacing) * 15);
   }
   .left-10 {
     left: calc(var(--spacing) * 10);
@@ -231,9 +204,6 @@
   }
   .m-auto {
     margin: auto;
-  }
-  .my-10 {
-    margin-block: calc(var(--spacing) * 10);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -250,17 +220,11 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-16 {
-    margin-top: calc(var(--spacing) * 16);
-  }
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
-  }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
   }
   .flex {
     display: flex;
@@ -278,9 +242,6 @@
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -290,14 +251,29 @@
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
+  .w-\[10\%\] {
+    width: 10%;
+  }
   .w-\[15\%\] {
     width: 15%;
   }
   .w-\[20\%\] {
     width: 20%;
   }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-\[45\%\] {
     width: 45%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-\[55\%\] {
     width: 55%;
@@ -305,11 +281,11 @@
   .w-\[90\%\] {
     width: 90%;
   }
-  .w-\[200\%\] {
-    width: 200%;
+  .w-\[100\%\] {
+    width: 100%;
   }
-  .w-\[full\] {
-    width: full;
+  .w-\[100\] {
+    width: 100;
   }
   .w-auto {
     width: auto;
@@ -332,6 +308,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -353,8 +332,8 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .rounded {
-    border-radius: 0.25rem;
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -399,14 +378,8 @@
   .border-x-\[\#66666644\] {
     border-inline-color: #66666644;
   }
-  .border-b-\[\#262626\] {
-    border-bottom-color: #262626;
-  }
   .border-b-\[\#343333\] {
     border-bottom-color: #343333;
-  }
-  .border-b-\[\#\] {
-    border-bottom-color: #;
   }
   .bg-\[\#000\] {
     background-color: #000;
@@ -462,6 +435,18 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .px-36 {
+    padding-inline: calc(var(--spacing) * 36);
+  }
+  .px-52 {
+    padding-inline: calc(var(--spacing) * 52);
+  }
+  .px-64 {
+    padding-inline: calc(var(--spacing) * 64);
+  }
   .px-\[20\%\] {
     padding-inline: 20%;
   }
@@ -470,6 +455,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -543,8 +531,14 @@
   .text-\[11px\] {
     font-size: 11px;
   }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
   .text-\[14px\] {
     font-size: 14px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
@@ -574,20 +568,26 @@
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
   }
-  .text-\[\#343333\] {
-    color: #343333;
+  .text-\[\#9EFF00\] {
+    color: #9EFF00;
   }
   .text-\[\#D8FF99\] {
     color: #D8FF99;
   }
+  .text-\[\#\] {
+    color: #;
+  }
   .text-\[\#adabab\] {
     color: #adabab;
+  }
+  .text-\[1\] {
+    color: 1;
   }
   .text-\[\[13px\]\] {
     color: [13px];
   }
-  .text-\[rgba\(63\,61\,61\,0\.72\)\] {
-    color: rgba(63,61,61,0.72);
+  .text-\[sm\] {
+    color: sm;
   }
   .text-white {
     color: var(--color-white);
