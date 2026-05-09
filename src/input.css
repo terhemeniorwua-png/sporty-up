@@ -16,6 +16,7 @@ body{
 
 }
 
+/* backgrounds */
 .landingBg{
      background:  url(../images/overlay.png),  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),  url(../images/hero-bg.png);
       /* background: linear-gradient(hsl(0, 0%, 15%, 0.95),hsla(0, 0%, 15%, 0.95)), url(../images/hero-bg.png); */
@@ -29,9 +30,15 @@ body{
  background:  url(../images/overlay.png),   linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),  url(../images/service-bg.png);
  background-position: center;
      background-repeat: space, no-repeat, no-repeat;
+     /* object-fit: contain; */
+}
+.squareUp-bg{
+    background:  url(../images/overlay.png),   linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),  url(../images/squareUp-bg.png);
+ background-position: center;
+     background-repeat: space, no-repeat, no-repeat;
      object-fit: contain;
 }
-
+/* utilities */
 .green-btn{
     background-color: #9EFF00;
     padding: 10px;
