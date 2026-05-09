@@ -28,6 +28,7 @@
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -183,11 +184,44 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
   .top-5 {
     top: calc(var(--spacing) * 5);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-1 {
+    bottom: calc(var(--spacing) * 1);
+  }
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-15 {
+    bottom: calc(var(--spacing) * 15);
+  }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
   }
   .left-\[40\%\] {
     left: 40%;
@@ -197,6 +231,9 @@
   }
   .m-auto {
     margin: auto;
+  }
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -210,11 +247,20 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .flex {
     display: flex;
@@ -222,9 +268,18 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
   .size-5 {
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -250,11 +305,23 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[200\%\] {
+    width: 200%;
+  }
+  .w-\[full\] {
+    width: full;
+  }
   .w-auto {
     width: auto;
   }
   .w-full {
     width: 100%;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -285,6 +352,12 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -326,8 +399,14 @@
   .border-x-\[\#66666644\] {
     border-inline-color: #66666644;
   }
+  .border-b-\[\#262626\] {
+    border-bottom-color: #262626;
+  }
   .border-b-\[\#343333\] {
     border-bottom-color: #343333;
+  }
+  .border-b-\[\#\] {
+    border-bottom-color: #;
   }
   .bg-\[\#000\] {
     background-color: #000;
@@ -353,6 +432,9 @@
   .bg-\[rgba\(38\,38\,38\,0\.72\)\] {
     background-color: rgba(38,38,38,0.72);
   }
+  .bg-\[rgba\(63\,61\,61\,0\.72\)\] {
+    background-color: rgba(63,61,61,0.72);
+  }
   .object-contain {
     object-fit: contain;
   }
@@ -373,6 +455,9 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -401,8 +486,14 @@
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pt-\[8\%\] {
     padding-top: 8%;
@@ -483,6 +574,9 @@
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
   }
+  .text-\[\#343333\] {
+    color: #343333;
+  }
   .text-\[\#D8FF99\] {
     color: #D8FF99;
   }
@@ -492,8 +586,18 @@
   .text-\[\[13px\]\] {
     color: [13px];
   }
+  .text-\[rgba\(63\,61\,61\,0\.72\)\] {
+    color: rgba(63,61,61,0.72);
+  }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
