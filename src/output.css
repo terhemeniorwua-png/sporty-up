@@ -209,9 +209,6 @@
   .m-auto {
     margin: auto;
   }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
-  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -233,9 +230,6 @@
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
-  }
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
   }
@@ -247,9 +241,6 @@
   }
   .grid {
     display: grid;
-  }
-  .table {
-    display: table;
   }
   .size-5 {
     width: calc(var(--spacing) * 5);
@@ -291,12 +282,6 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -330,9 +315,6 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -365,9 +347,6 @@
   }
   .border-\[\#343333\] {
     border-color: #343333;
-  }
-  .border-\[\#3433338d\] {
-    border-color: #3433338d;
   }
   .border-\[\#34333343\] {
     border-color: #34333343;
@@ -447,9 +426,6 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
-  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
@@ -470,9 +446,6 @@
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
-  }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -517,10 +490,6 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -545,10 +514,6 @@
   .text-\[15px\] {
     font-size: 15px;
   }
-  .leading-2 {
-    --tw-leading: calc(var(--spacing) * 2);
-    line-height: calc(var(--spacing) * 2);
-  }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
     line-height: calc(var(--spacing) * 5);
@@ -557,21 +522,9 @@
     --tw-leading: calc(var(--spacing) * 7);
     line-height: calc(var(--spacing) * 7);
   }
-  .leading-14 {
-    --tw-leading: calc(var(--spacing) * 14);
-    line-height: calc(var(--spacing) * 14);
-  }
-  .leading-16 {
-    --tw-leading: calc(var(--spacing) * 16);
-    line-height: calc(var(--spacing) * 16);
-  }
   .leading-20 {
     --tw-leading: calc(var(--spacing) * 20);
     line-height: calc(var(--spacing) * 20);
-  }
-  .leading-28 {
-    --tw-leading: calc(var(--spacing) * 28);
-    line-height: calc(var(--spacing) * 28);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -592,26 +545,11 @@
   .text-\[\#9EFF00\] {
     color: #9EFF00;
   }
-  .text-\[\#262626\] {
-    color: #262626;
-  }
-  .text-\[\#262626c4\] {
-    color: #262626c4;
-  }
   .text-\[\#434242\] {
     color: #434242;
   }
-  .text-\[\#434242c4\] {
-    color: #434242c4;
-  }
-  .text-\[\#2626264a\] {
-    color: #2626264a;
-  }
   .text-\[\#D8FF99\] {
     color: #D8FF99;
-  }
-  .text-\[\#\] {
-    color: #;
   }
   .text-\[\#adabab\] {
     color: #adabab;
@@ -621,13 +559,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
