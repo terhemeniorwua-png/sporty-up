@@ -11,9 +11,9 @@
 </head>
 <body class="tracking-wide">
     <header>
-        <nav class="flex justify-between px-10 items-center py-5 bg-[#000]">
+        <nav class="flex justify-between px-10 items-center py-5 bg-black">
             <div><img src="images/Logo (5).png" alt=""  class="w-28"></div>
-            <ul class="flex justify-center items-center gap-8">
+            <ul class="flex justify-center items-center gap-8 max-md:hidden">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Work</a></li>
@@ -21,14 +21,15 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Careers</a></li>
             </ul>
-            <button type="button" class="green-btn">Contact Us</button>
+             <button class="lg:hidden"><i class="fa-solid fa-bars text-3xl "></i></button>
+            <button type="button" class="green-btn max-md:hidden">Contact Us</button>
         </nav>
     </header>
     <main class="">
          <section class="landingBg ">
-        <div class="border  p-2 px-5 border-[#262626] text-center pt-[8%]">
-            <h1 class="text-6xl w-[55%] font-semibold m-auto leading-20">A Digital Product Studio that will Work</h1>
-            <div class="text-[#adabab] bg-[#1d1d1d] mt-2 p-2 border py-5 w-[55%] m-auto rounded-md border-[#262626]">
+        <div class="border p-2 px-5 border-[#262626] text-center pt-[20%] lg:pt-[8%]">
+            <h1 class="text-4xl font-black lg:text-6xl lg:w-[55%] md:font-semibold m-auto leading-12 lg:leading-20">A Digital Product Studio that will Work</h1>
+            <div class="text-[#adabab] bg-[#1d1d1d] max-md:mt-10 p-2 border py-5 max-md:h-52 lg:w-[55%] max-md:text-lg max-md:leading-12 m-auto rounded-md border-[#262626]">
                 <p>For <span class="text-white paddedBg">Startups</span>, <span class="text-white paddedBg">Enterprise Leaders</span>, <span class="text-white paddedBg">Media & Publishers</span> and <span class="text-white paddedBg">Social Good</span>
                 </p>
             </div>
@@ -37,12 +38,12 @@
                 <button type="button" class="green-btn"><a href="#">Contact Us</a></button>
             </div>
         </div>
-        <div class="bg-[#1d1c1c] border px-10 py-2 rounded-3xl relative left-[40%] top-5 w-[20%] text-sm border-[#262626] h-10 text-center"><p> Trusted By 250+ Companies</p></div>
+        <div class="bg-[#1d1c1c] border px-10 py-2 rounded-3xl md:relative md:left-[40%] md:top-5 lg:w-[20%] text-sm border-[#262626] h-10 text-center"><p> Trusted By 250+ Companies</p></div>
     </section>
 
     <!-- socials -->
      <section class="bg-[#151515] border border-[#262626]">
-        <div class="flex justify-between items-center p-10">
+        <div class="grid grid-cols-2 lg:flex justify-between items-center p-10">
             <img src="images/zapier.png" alt="">
             <img src="images/spoty.png" alt="">
             <img src="images/zoom.png" alt="">
@@ -54,11 +55,11 @@
 
      <!-- our service section -->
      <section class="our-service-bg">
-          <div class="border   p-2 px-5 border-[#262626] text-center py-[8%] ">
-            <h1 class="text-5xl w-[45%] font-medium m-auto">Our Services</h1>
-            <p class="pb-12 w-[90%] m-auto text-sm leading-7 tracking-wide">Transform your brand with our innovative digital solutions that captivate and engage your audience.</p>
+          <div class="border p-2 px-5 border-[#262626] text-center py-[8%] ">
+            <h1 class=" text-3xl lg:text-5xl lg:w-[45%] font-medium m-auto">Our Services</h1>
+            <p class="pb-12 w-[90%] m-auto text-sm max-md:pt-2 lg:leading-7 tracking-wide">Transform your brand with our innovative digital solutions that captivate and engage your audience.</p>
         </div>
-        <div class="bg-[#1a1a1a] grid grid-cols-3">
+        <div class="bg-[#1a1a1a] grid max-md:px-2 lg:grid-cols-3">
             <div class="border p-8 border-[#66666644]">
                 <div class="bg-[#262626] p-5 mt-5 w-[20%] flex justify-center items-center rounded-lg"><img src="images/Union.png" alt=""></div>
                 <h2 class="font-bold text-lg py-10">Design</h2>
@@ -241,7 +242,6 @@
               </div>
             </div>
        </section>
-
        <!-- FQA section -->
         <section>
              <div class="">
@@ -418,7 +418,7 @@
      <!-- footer -->
       <footer class=" bg-[#1a1a1a] border border-[#343333]">
         <div>
-            <nav class="flex justify-around items-center pb-5 border border-[#343333] pt-10 px-">
+            <nav class="lg:flex justify-around items-center pb-5 border border-[#343333] pt-10 px-">
             <div><img src="images/Logo (5).png" alt=""  class="w-28"></div>
             <ul class="flex justify-center items-center text-[15px] gap-5">
                 <li><a href="#">Home</a></li>
@@ -436,7 +436,7 @@
             </div>
         </nav>
         </div>
-        <div class="flex justify-between px-20 mb-20 pt-5">
+        <div class="lg:flex justify-between px-20 mb-20 pt-5">
             <div class="flex gap-5 text-[14px]">
                 <span><i class="fa-solid fa-envelope text-[#9EFF00] pr-2 text-sm"></i>hello@squareup.com</span>
                 <span><i class="fa-solid fa-phone text-[#9EFF00] pr-2 text-sm"></i>+9191813232309</span>

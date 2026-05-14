@@ -19,18 +19,13 @@ body{
 /* backgrounds */
 .landingBg{
      background:  url(../images/overlay.png),  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),  url(../images/hero-bg.png);
-      /* background: linear-gradient(hsl(0, 0%, 15%, 0.95),hsla(0, 0%, 15%, 0.95)), url(../images/hero-bg.png); */
      background-position: center;
      background-repeat: space;
-     /* color: hsl(0, 0%, 50%); */
-     /* color: hsl(0, 0%, 15%); */
-    
 }
 .our-service-bg{
  background:  url(../images/overlay.png),   linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),  url(../images/service-bg.png);
  background-position: center;
      background-repeat: space, no-repeat, no-repeat;
-     /* object-fit: contain; */
 }
 .squareUp-bg{
     background:  url(../images/overlay.png),   linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),  url(../images/squareUp-bg.png);
